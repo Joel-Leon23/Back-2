@@ -10,6 +10,8 @@ public class Cellphone {
 	private String brand;
 	
 	private Date createdAt;
+	
+	private Integer port;
 
 	public Long getId() {
 		return this.id;
@@ -41,5 +43,19 @@ public class Cellphone {
 
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	/**
+	 * @return the port
+	 */
+	public Integer getPort() {
+		return this.port;
+	}
+
+	/**
+	 * @param port the port to set
+	 */
+	public void setPort(Integer port) {
+		this.port = port;
 	}
 }
