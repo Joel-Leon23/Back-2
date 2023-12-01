@@ -15,6 +15,9 @@ zuul:
     cellphones:
       service-id: service-cellphones
       path: /api/cellphones/**
+    users:
+      service-id: service-users
+      path: /api/us/**  
       
 ribbon:
  ConnectTimeout: 3000

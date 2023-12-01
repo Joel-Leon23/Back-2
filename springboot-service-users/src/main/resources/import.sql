@@ -1,0 +1,2 @@
+INSERT INTO Users(username, password, enabled, name, last_name, email)VALUES('john_doe', 'password123', true, 'John', 'Doe', 'john.doe@example.com');
+INSERT INTO Users(username, password, enabled, name, last_name, email)VALUES('jane_smith', 'secure_password', true, 'Jane', 'Smith', 'jane.smith@example.com');
