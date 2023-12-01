@@ -40,7 +40,11 @@ public class CellphoneController {
 //		if (!val) {
 //			throw new RuntimeException("Can't find detail");
 //		}
-		
+		try {
+			Thread.sleep(2000L);
+		} catch(InterruptedException e) {
+			e.printStackTrace();
+		}
 		return service.findById(id);
 	}
 	
