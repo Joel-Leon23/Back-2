@@ -36,6 +36,11 @@ public class CellphoneController {
 	
 	@GetMapping("/cellphone/{id}")
 	public Cellphone getPhone(@PathVariable Long id) {
+//		boolean val = false;
+//		if (!val) {
+//			throw new RuntimeException("Can't find detail");
+//		}
+		
 		return service.findById(id);
 	}
 	

@@ -3,6 +3,11 @@ package com.microservice.store.models;
 import java.util.Date;
 
 public class Cellphone {
+
+	public Cellphone() {
+		super();
+	}
+
 	private Long id;
 
 	private String name;
@@ -12,6 +17,13 @@ public class Cellphone {
 	private Date createdAt;
 	
 	private Integer port;
+	
+	public Cellphone(Long id, String name, String brand) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.brand = brand;
+	}
 
 	public Long getId() {
 		return this.id;
