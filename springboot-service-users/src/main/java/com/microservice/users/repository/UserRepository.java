@@ -2,7 +2,9 @@ package com.microservice.users.repository;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import com.microservice.users.entities.User;
 
@@ -10,7 +12,8 @@ import com.microservice.users.entities.User;
 @RepositoryRestResource(path = "users")
 public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 	
-	public User findByUsername(String username);
+	@RestResource(path = "buscar-username")
+	public User findByUsername(@Param("nombre") String username);
 	
 	
 	public User findByUsernameAndEmail(String username, String email);
