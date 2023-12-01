@@ -6,6 +6,7 @@ spring:
   mvc.pathmatch.matching-strategy: ANT_PATH_MATCHER
 eureka: 
   client: 
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
   instance:
@@ -20,4 +21,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 40000
