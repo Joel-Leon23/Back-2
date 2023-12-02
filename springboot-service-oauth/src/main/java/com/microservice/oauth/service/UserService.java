@@ -11,11 +11,12 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.microservice.commons.users.entity.User;
 import com.microservice.oauth.client.UserFeignClient;
 
-
+@Service
 public class UserService implements UserDetailsService {
 
 	private Logger log = LoggerFactory.getLogger(UserService.class);

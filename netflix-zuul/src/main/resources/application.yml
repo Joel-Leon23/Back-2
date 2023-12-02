@@ -17,7 +17,11 @@ zuul:
       path: /api/cellphones/**
     users:
       service-id: service-users
-      path: /api/us/**  
+      path: /api/us/**
+    oauth:
+      service-id: service-oauth
+      path: /api/security/**
+      sensitive-headers: Cookie, Set-Cookie
       
 ribbon:
  ConnectTimeout: 3000
