@@ -5,8 +5,10 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
-import com.microservice.users.entities.Role;
-import com.microservice.users.entities.User;
+import com.microservice.commons.users.entity.Role;
+import com.microservice.commons.users.entity.User;
+
+
 
 @Configuration
 public class RepositoryConfig implements RepositoryRestConfigurer {
